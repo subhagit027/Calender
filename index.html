@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calender">
+            <div class="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">January</p>
+                <p id="year">2024</p>
+
+            </div>
+        </div>
+    </div>
+<script>
+    const date = document.getElementById("date");
+    const day = document.getElementById("day");
+    const month = document.getElementById("month");
+    const year = document.getElementById("year");
+
+    const newDate = new Date();
+    const getAllDays = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat"];
+    const getAllMonths = ["Jan","Feb","Mar","April","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+
+    date.innerHTML = (newDate.getDate() < 10 ? "0" : "") + newDate.getDate();
+    day.innerHTML = getAllDays[newDate.getDay()];
+    month.innerHTML = getAllMonths[newDate.getMonth()];
+    year.innerHTML = newDate.getFullYear();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+ margin: 0;   
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'poppins', sans-serif;
+}
+.container{
+   max-height:100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background:linear-gradient(45deg, #1d0000, #20205b) ;
+}
+.calendar{
+    height: 250px;
+    width: 300px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.left, .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+.right{
+    width: 42%;
+    background: #f4351e;
+    color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.left{
+    width: 58%;
+}
